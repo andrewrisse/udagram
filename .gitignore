@@ -1,6 +1,6 @@
 set_env.sh
 */.env
 .idea/*
-aws-secret.yaml
-env-secret.yaml
-env-configmap.yaml
+deploy/aws-secret.yaml
+deploy/env-secret.yaml
+deploy/env-configmap.yaml
