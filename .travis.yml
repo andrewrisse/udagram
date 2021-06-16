@@ -7,11 +7,11 @@ services:
 
 script:
   - docker --version
-  - docker build -t udagram-api-feed -f udagram-api-feed .
+  - docker build . -t udagram-api-feed -f udagram-api-feed/Dockerfile
   - docker tag udagram-api-feed andrewrisse/udagram-api-feed:latest
-  - docker build -t udagram-api-users -f udagram-api-users .
+  - docker build . -t udagram-api-users -f udagram-api-users/Dockerfile
   - docker tag udagram-api-users andrewrisse/udagram-api-users:latest
-  - docker build -t udagram-frontend -f udagram-frontend .
+  - docker build . -t udagram-frontend -f udagram-frontend/Dockerfile
   - docker tag udagram-frontend andrewrisse/udagram-frontend:latest
 
 after_success:
